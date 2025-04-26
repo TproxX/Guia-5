@@ -1,0 +1,23 @@
+funcion potencia(entero base, entero exponente): entero
+     entero pot, i
+inicio
+    pot <- 1
+    para i <- 1 hasta exponente haga
+        pot <- pot * base 
+    fin para
+    retorne pot   
+fin
+
+procedimiento calcular_potencia
+    entero base, exponente
+inicio
+    escriba "Ingrese la base: "
+    lea base
+    escriba "Ingrese el exponente: "
+    lea exponente
+    escriba base, " elevado a la ",exponente, " es ", potencia(base,exponente)
+fin
+
+inicio
+    llamar calcular_potencia
+fin

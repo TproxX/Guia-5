@@ -1,0 +1,26 @@
+real lado1, lado2, area
+
+procedimiento datos(var real lado1, var real lado2)
+
+inicio
+    escriba "lado 1: "
+    lea lado1
+    escriba "lado 2: "
+    lea lado2
+fin
+
+funcion hallar_area(real lado1, real lado2): real
+
+inicio
+    area <- lado1 * lado2
+    retorne area
+    
+fin
+
+inicio
+
+   llamar datos(lado1,lado2)
+   llamar hallar_area(lado1, lado2)
+   escriba "el area del cuadrado es: ", area
+   
+fin

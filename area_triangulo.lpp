@@ -1,0 +1,16 @@
+real base,altura
+
+
+funcion area_triangulo(real base,real altura):real
+inicio
+    retorne base * altura / 2
+fin
+
+
+inicio
+    escriba "Base: "
+    lea base
+    escriba "Altura: "
+    lea altura
+    escriba "Area = ",area_triangulo(base,altura)
+fin
